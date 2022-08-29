@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/a4f657f6b4.js" crossorigin="anonymous"></script>
     <title>Encriptador</title>
 </head>
 <body>
@@ -13,14 +14,15 @@
     </header>
     <main>
         <section>
-            <textarea class="input-texto" cols="50" rows="20" placeholder="Ingrese su texto..."></textarea>
+            <textarea class="input-texto" cols="30" rows="8" placeholder="Ingrese su texto..."></textarea>
+            <p id="advertencia"><i class="fa-solid fa-circle-exclamation"></i>Solo letras minúsculas y sin acentos</p>
             <div class="botones">
                 <button class="btn encriptar" onclick="btnEncriptar()">Encriptar</button>
                 <button class="btn desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
             </div>
         </section>
         <section class="mensaje-area">
-            <textarea id="mensaje-box" class="mensaje" cols="30" rows="30" ></textarea>
+            <textarea id="mensaje-box" class="mensaje" cols="30" rows="5" ></textarea>
             <div id="dt" class="dibujo-textarea">
                 <img src="img/Muñeco.png" alt="Muñeco observando un diamante.">
                 <p>Ningún mensaje fue encontrado</p>
@@ -32,7 +34,7 @@
         </section>
     </main>
     <footer>
-        <p>Creado por Nieva Gustavo</p>
+        <p>Creado por Nieva Gustavo<a href="https://github.com/Gnieva94"><i class="fa-brands fa-github"></i></a></p>
     </footer>
     <script src="js/main.js"></script>
 </body>
